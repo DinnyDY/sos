@@ -1,0 +1,113 @@
+    //import
+    @import "components/_header.scss";
+    @import "components/selgalery";
+    @import "components/specialFerute";
+    @import "components/footer";
+    // fonts
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@700&display=swap');
+    //vars
+    $colora: black;
+    $colormain:#FFB548;
+    //main
+    body {
+        padding: 0px;
+        margin: 0px;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        background-color: #0F0F0F;
+        ;
+    }
+    
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    ul {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    h1 {
+        font-size: 100px;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+    
+    .btn {
+        background-color: $colormain;
+        border-radius: 5px;
+        padding: 25px;
+        color: $colora;
+        font-size: 16px;
+        display: inline-flex;
+    }
+    
+    .btn:hover {
+        color: $colora;
+    }
+    
+    .container {
+        margin: 0px 120px;
+        display: flex;
+        width: auto;
+    }
+    
+    @media screen and (min-width: 1450px) {
+        .container {
+            margin: 0px 6.8rem;
+        }
+        .nav-bar {
+            ul {
+                li {
+                    margin-right: 5rem;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 1205px) {
+        .container {
+            margin: 0px 5rem;
+        }
+    }
+    
+    @media screen and (max-width: 991px) {
+        .container {
+            margin: 0px 2rem;
+        }
+        .btn {
+            padding: 20px;
+        }
+    }
+    
+    @media screen and (max-width: 767px) {
+        .container {
+            margin: 0px 2rem;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        .btn {
+            padding: 15px;
+            font-size: 10px;
+        }
+    }
+    
+    @media screen and (max-width: 400px) {
+        .container {
+            margin: 0px 1rem;
+        }
+    }

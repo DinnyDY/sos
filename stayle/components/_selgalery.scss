@@ -1,0 +1,115 @@
+    .aboutgalery {
+        background: url(/src/bgimages.png);
+        background-position: center 2%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        box-shadow: 0em -2em 2em #020303;
+        h1 {
+            margin: 5px 0px;
+            line-height: 1;
+        }
+        h4 {
+            margin: 5px 0px;
+        }
+        .container {
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+        }
+    }
+    
+    .about {
+        max-width: 500px;
+        height: 600px;
+        text-wrap: balance;
+        word-break: keep-all;
+    }
+    
+    .galery {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+    
+    .slider {
+        align-items: center;
+        height: 650px;
+        width: 550px;
+        border-radius: 5px;
+        img {
+            position: absolute;
+            height: 650px;
+            width: 550px;
+        }
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    .switch {
+        margin-left: 30px;
+        z-index: 2;
+    }
+    
+    @media screen and (min-width: 1450px) {}
+    
+    @media screen and (max-width: 1205px) {
+        .aboutgalery {
+            .container {
+                flex-direction: column;
+            }
+        }
+        .galery {
+            justify-content: center;
+        }
+        .about {
+            height: auto;
+        }
+        h1 {
+            font-size: 60px;
+        }
+    }
+    
+    @media screen and (max-width: 991px) {
+        h1 {
+            font-size: 40px;
+        }
+    }
+    
+    @media screen and (max-width: 767px) {
+        .slider {
+            width: 400px;
+            height: 480px;
+            img {
+                width: 400px;
+                height: 480px;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .galery {
+            margin-top: 40px;
+        }
+        .about {
+            padding: 1rem;
+        }
+        .aboutgalery {
+            .container {
+                margin: 0px;
+            }
+        }
+        .switch {
+            display: none;
+        }
+        .slider {
+            width: 300px;
+            height: 400px;
+            img {
+                width: 300px;
+                height: 400px;
+            }
+        }
+    }

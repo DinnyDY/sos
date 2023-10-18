@@ -1,0 +1,58 @@
+.special {
+    background-image: url(/src/bgimage3.png);
+    background-position: center 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    .container {
+        z-index: 2;
+    }
+    a {
+        color: #FFB548;
+    }
+    a:hover {
+        color: #FFB548;
+    }
+}
+
+.SPEcontent {
+    justify-content: center;
+    align-items: center;
+    h1 {
+        margin: 10px 0px;
+    }
+}
+
+.spe_content {
+    margin-left: 25%;
+    margin-top: 15%;
+}
+
+.cola {
+    div {
+        margin: 20px 0px;
+    }
+    .elements {
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+}
+
+@media screen and (min-width: 1450px) {}
+
+@media screen and (max-width: 1205px) {
+    .spe_content {
+        margin: auto;
+        margin-top: 20%;
+    }
+    .special {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 991px) {}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 400px) {}
